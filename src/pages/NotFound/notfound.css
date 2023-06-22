@@ -1,0 +1,57 @@
+.div-404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fafbf4;
+}
+
+.title-404 {
+    font-size: 250px;
+    margin-block-start: 0.23em;
+    margin-block-end: 0.13em;
+    color: #828a64;
+}
+
+.text-404 {
+    font-size: 35px;
+    color: #828a64;
+}
+
+.link-404 {
+    margin: 100px 0px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #828a64;
+}
+
+/* Responsive tablet */
+@media screen and (max-width: 900px) {
+    .text-404 {
+        font-size: 25px;
+    }
+
+    .title-404 {
+        margin-top: 100px;
+        font-size: 150px;
+    }
+
+    .div-404 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+/* Responsive mobile */
+@media screen and (max-width: 650px) {
+    .title-404 {
+        margin-top: 150px;
+        font-size: 120px;
+    }
+
+    .text-404 {
+        font-size: 22px;
+    }
+}

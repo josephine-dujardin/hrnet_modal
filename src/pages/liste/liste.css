@@ -1,0 +1,65 @@
+.container-list {
+    background-color: #fafbf4;
+    height: 100vh;
+}
+
+.main {
+    margin: 0px 50px;
+}
+
+.title {
+    text-align: center;
+    color: #828a64;
+    padding: 45px 0px;
+}
+
+.data-table-extensions-filter {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.filter-text {
+    border: solid 1px #828a64;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    color: #828a64;
+}
+
+.filter-text {
+    border: none;
+    border-bottom: #828a64 solid 1px;
+    outline: none;
+    color: #5f6548;
+    margin-bottom: 20px;
+}
+
+.jzrolw {
+    border-radius: 10px 10px 0px 0px !important;
+}
+
+.ikexHN {
+    min-width: 160px !important;
+}
+
+.gVZIpW, .gocYik, .kqWIVd {
+    color: #828a64 !important;
+}
+
+.kqWIVd {
+    border-radius: 0px 0px 10px 10px !important;
+}
+
+.delete-btn {
+    border: none;
+    background-color: #f1f5e5;
+    padding: 10px 30px;
+    width: 135px;
+    color: #828a64;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #dce4c5;
+}
