@@ -1,16 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-function Modal(props) {
-    const {
-        firstName,
-        lastName,
-        department,
-        street,
-        city,
-        state,
-        zipCode,
-        onSubmit
-    } = props;
+const Modal = () => {
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -39,39 +29,9 @@ function Modal(props) {
         setIsOpen(false);
     };
 
-    /**
-     * Validates the form fields.
-     * @returns {boolean} - Indicates whether the form is valid.
-     */
-    const validateForm = () => {
-        return (
-            firstName.trim() !== '' &&
-            lastName.trim() !== '' &&
-            department.trim() !== '' &&
-            street.trim() !== '' &&
-            city.trim() !== '' &&
-            state.trim() !== '' &&
-            zipCode.trim() !== ''
-        );
-    };
-
-    /**
-     * Handles the form submission.
-     * If the form is valid, it calls the onSubmit function and opens the modal.
-     * Otherwise, it closes the modal.
-     */
-    const handleFormSubmit = () => {
-        if (validateForm()) {
-            onSubmit();
-            openModal();
-        } else {
-            closeModal();
-        }
-    };
-
     return (
         <div className="modal-container">
-            <button className="save" onClick={handleFormSubmit}>Save</button>
+            <button className="save" onClick={openModal}>Save</button>
             {isOpen && (
                 <div className="modal">
                     <div className="modal-content">
