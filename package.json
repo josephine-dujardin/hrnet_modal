@@ -1,6 +1,6 @@
 {
   "name": "@josephine-dujardin/hrnet_modal",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": false,
   "dependencies": {
     "@emotion/react": "^11.11.1",
