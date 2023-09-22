@@ -1,7 +1,7 @@
 {
-  "name": "hrnet",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@josephine-dujardin/hrnet_modal",
+  "version": "1.0.0",
+  "private": false,
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
@@ -44,5 +44,21 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "## Description The modal dialog created with React component, to confirm when new employee records are created.",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephine-dujardin/hrnet_modal.git"
+  },
+  "keywords": [
+    "modal"
+  ],
+  "author": "josephine-dujardin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josephine-dujardin/hrnet_modal/issues"
+  },
+  "homepage": "https://github.com/josephine-dujardin/hrnet_modal#readme"
 }
