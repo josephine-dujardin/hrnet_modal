@@ -9,10 +9,7 @@ The modal dialog created with React component, to confirm when new employee reco
 - [NPM](https://www.npmjs.com/)
 
 ## Installation
-- Clone the repo and run the command: `$ cd hrnet_modal`
-- Install the npm packages (described in package.json): `$ npm install`
-- Launch the application: `$ npm start`
-- Open http://localhost:3000 to view it in your browser.
+- Install the package: `$ npm i @josephine-dujardin/hrnet_modal`
 
 ## Usage
 This component is designed for use within a React application (it comes from the [HRnet application] (https://github.com/josephine-dujardin/hrnet)).
@@ -23,7 +20,6 @@ You can use it in your own application and add functions and styling for further
 ### Modal
 A component that represents a simple modal window.
 
-#### Usage
 ```jsx
 import React, { useEffect, useState } from 'react';
 
@@ -141,3 +137,15 @@ function Modal(props) {
 }
 
 export default Modal;
+``` 
+
+#### Usage
+Import the Modal component on your project
+```jsx
+import { Modal } from '@josephine-dujardin/hrnet_modal';
+``` 
+You can then use it within your project
+
+```jsx
+<Modal />
+``` 
