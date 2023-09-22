@@ -99,18 +99,17 @@ function Modal(props) {
     };
 
     return (
-        <div className="modal-container">
-            <button className="save" onClick={handleFormSubmit}>Save</button>
-            {isOpen && (
-                <div className="modal">
-                    <div className="modal-content">
-                        <span className="close" onClick={closeModal}>&times;</span>
-                        <p className="modal-text">Employee Created!</p>
-                    </div>
-                </div>
-            )}
-        </div>
-    );
+        React.createElement('div', { className: 'modal-container' },
+            React.createElement('button', { className: 'save', onClick: handleFormSubmit }, 'Save'),
+            isOpen && (
+                React.createElement('div', { className: 'modal' },
+                    React.createElement('div', { className: 'modal-content' },
+                        React.createElement('span', { className: 'close', onClick: closeModal }, '\u00D7'), // \u00D7' represents the '×' character
+                        React.createElement('p', { className: 'modal-text' }, 'Employee Created!')
+                    )
+                )
+            )
+        ));
 }
 
 export default Modal;
