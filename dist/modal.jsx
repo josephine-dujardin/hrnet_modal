@@ -1,26 +1,3 @@
-# Modal Component for HRnet Application
-
-## Description
-The modal dialog created with React component, to confirm when new employee records are created.
-
-## Prerequisites:
-
-- [NodeJS (**version 12.18**)](https://nodejs.org/en/)
-- [NPM](https://www.npmjs.com/)
-
-## Installation
-- Install the package: `$ npm i @josephine-dujardin/hrnet_modal`
-
-## Usage
-This component is designed for use within a React application (it comes from the [HRnet application] (https://github.com/josephine-dujardin/hrnet)).
-You can use it in your own application and add functions and styling for further customization.
-
-## Components
-
-### Modal
-A component that represents a simple modal window.
-
-```jsx
 import React, { useEffect, useState } from 'react';
 
 /**
@@ -80,15 +57,3 @@ function Modal() {
 }
 
 export default Modal;
-``` 
-
-#### Usage
-Import the Modal component on your project
-```jsx
-import { Modal } from '@josephine-dujardin/hrnet_modal';
-``` 
-You can then use it within your project
-
-```jsx
-<Modal />
-``` 
