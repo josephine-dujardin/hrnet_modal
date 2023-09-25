@@ -66,8 +66,53 @@ Import the Modal component on your project
 ```jsx
 import { Modal } from '@josephine-dujardin/hrnet_modal';
 ``` 
-You can then use it within your project
+You can then use it within your project, as in the following example:
 
 ```jsx
-<Modal />
+import React, { useState } from 'react';
+import { Modal } from '@josephine-dujardin/hrnet_modal';
+
+function Home() {
+    const [openModal, setOpenModal] = useState(false);
+
+    const handleModalClose = () => {
+        setOpenModal(false);
+    };
+
+    return (
+        <div className="container">
+            <h2 className="home-title">Create Employee</h2>
+            <form action="#" id="create-employee">
+                <label htmlFor="first-name">First Name</label>
+                <input
+                    id="first-name"
+                    type="text"
+                />
+
+                <label htmlFor="last-name">Last Name</label>
+                <input
+                    id="last-name"
+                    type="text"
+                />
+
+                <button
+                    className="modal-btn"
+                    type="button"
+                    onClick={() => setOpenModal(true)}
+                >
+                    Save
+                </button>
+            </form>
+
+            {/* Modal component */}
+            <Modal
+                isOpen={openModal}
+                openClose={handleModalClose}
+                content={"Employee created"}
+            />
+        </div>
+    );
+}
+
+export default Home;
 ``` 
