@@ -2,6 +2,12 @@ import React from 'react';
 
 /**
  * A modal component for creating an employee profile.
+ *
+ * @param {Object} props - The component's props.
+ * @param {boolean} props.isOpen - Indicates whether the modal is open or closed.
+ * @param {function} props.openClose - A callback function to toggle the modal's open/close state.
+ * @param {string} props.content - The content to display within the modal.
+ *
  * @returns {JSX.Element} - The rendered modal component.
  */
 function Modal({ isOpen, openClose, content }) {
